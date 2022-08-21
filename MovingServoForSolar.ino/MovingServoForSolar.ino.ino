@@ -15,9 +15,9 @@ void loop()
 {  
   roof = analogRead(A0);    
   rear= analogRead(A1);
-  Serial.print(roof)
-  Serial.print("  ")
-  Serial.println(rear)
+  Serial.print(roof);
+  Serial.print("  ");
+  Serial.println(rear);
   if(roof>rear){
   servo1.write(90);
   servo2.write(0);
